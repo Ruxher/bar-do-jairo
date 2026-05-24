@@ -1,0 +1,40 @@
+.header {
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.header h1 {
+    color: var(--accent-main);
+}
+
+.header nav {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navlink {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+}
+
+.linkAtivo {
+    background-color: var(--brand-green);
+    color: var(--bg-main);
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+@media (max-width: 720px) {
+    .header h1 {
+        display: none;
+    }
+
+    .header nav {
+        margin: 1rem 0;
+    }
+}

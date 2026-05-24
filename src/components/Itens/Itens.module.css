@@ -1,0 +1,104 @@
+.itens {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: .2rem;
+    flex: 1 1 calc((100% - 3rem) / 4);
+    box-sizing: border-box;
+}
+
+.item h2 {
+    color: var(--text-main);
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.vendas {
+    color: var(--brand-yellow);
+}
+
+.bruto {
+    color: var(--brand-red);
+}
+
+.total {
+    color: var(--brand-green);
+}
+
+.botoes {
+    height: 2.5rem;
+    box-sizing: border-box;
+}
+
+.botoes input {
+    background-color: var(--bg-main);
+    color: var(--text-secondary);
+    border: none;
+    height: 100%;
+    border-radius: .2rem 0 0 .2rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    width: 40%;
+}
+
+.botoes input::-webkit-inner-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.botao {
+    background-color: var(--text-main);
+    border: none;
+    border-radius: 0 .2rem .2rem 0;
+    font-size: 1rem;
+    height: 100%;
+    width: 26%;
+}
+
+.botaoRemover {
+    background-color: var(--brand-red);
+    border: none;
+    border-radius: .2rem 0 0 .2rem;
+    font-size: 1rem;
+    height: 100%;
+    width: 26%;
+}
+
+@media (max-width: 720px) {
+    .item {
+        flex: 1 1 100%;
+    }
+
+    .item p {
+        font-size: 1.5rem;
+    }
+
+    .item h2 {
+        font-size: 3rem;
+    }
+
+    .botoes {
+        height: 3.5rem;
+        
+    }
+
+    .botao {
+        font-size: 1.5rem;
+    }
+
+    .botaoRemover {
+        font-size: 1.5rem;
+    }
+
+    .botoes input {
+        font-size: 1.5rem;
+    }
+}

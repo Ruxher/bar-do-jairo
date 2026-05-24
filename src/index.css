@@ -1,0 +1,35 @@
+:root {
+  --bg-main: #141926;
+  --bg-secondary: #1b202e;
+
+  --brand-green: #29F280;
+  --brand-blue: #26ADE4;
+  --brand-yellow: #F2D029;
+  --brand-red: #F2295B;
+
+  --text-main: #BFCAD9;   
+  --text-muted: #738294;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 10px;
+  }
+}

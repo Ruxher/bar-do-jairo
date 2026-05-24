@@ -1,0 +1,32 @@
+.main h1 {
+    background-color: var(--bg-secondary);
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.rodape {
+    background-color: var(--bg-secondary);
+    text-align: center;
+    margin: 1rem;
+    border-radius: .2rem;
+}
+
+.rodape button {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    width: 100%;
+    border: none;
+    border-radius: .2rem;
+    color: var(--text-main);
+    font-size: 3rem;
+    font-weight: 600;
+}   
+
+.rodape button:hover {
+    background-color: var(--text-main);
+    color: var(--bg-main);
+    cursor: pointer;
+}
