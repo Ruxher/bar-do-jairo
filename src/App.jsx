@@ -17,25 +17,25 @@ function App() {
     const [vendasMensais, setVendasMensais] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/estoque")
+        fetch("https://bar-do-jairo.onrender.com/estoque")
             .then(res => res.json())
             .then(data => setEstoque(data))
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost:3000/vendas/diarias")
+        fetch("https://bar-do-jairo.onrender.com/vendas/diarias")
             .then(res => res.json())
             .then(data => setVendasDiarias(data))
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost:3000/vendas/semanais")
+        fetch("https://bar-do-jairo.onrender.com/vendas/semanais")
             .then(res => res.json())
             .then(data => setVendasSemanais(data))
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost:3000/vendas/mensais")
+        fetch("https://bar-do-jairo.onrender.com/vendas/mensais")
             .then(res => res.json())
             .then(data => setVendasMensais(data))
     }, [])

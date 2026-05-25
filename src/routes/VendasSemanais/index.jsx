@@ -38,7 +38,7 @@ function VendasSemanais({ vendasDiarias, setVendasMensais, vendasSemanais }) {
         let mes = new Date().toLocaleDateString('pt-BR', { month: 'long' })
         resumoMes.mes = mes.charAt(0).toUpperCase() + mes.slice(1)
 
-        await fetch("http://localhost:3000/vendas/mensais", {
+        await fetch("https://bar-do-jairo.onrender.com/vendas/mensais", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(resumoMes)

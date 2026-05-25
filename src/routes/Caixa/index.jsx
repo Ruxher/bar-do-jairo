@@ -27,7 +27,7 @@ function Caixa({ vendasDiarias, setVendasDiarias, setCaixa, caixa, porTipo, tipo
         novaVenda.lucroLiquidoTotal = lucroLiquidoTotal.toFixed(2)
         novaVenda.data = new Date().toLocaleDateString('pt-BR')
 
-        await fetch("http://localhost:3000/vendas/diarias", {
+        await fetch("https://bar-do-jairo.onrender.com/vendas/diarias", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(novaVenda)

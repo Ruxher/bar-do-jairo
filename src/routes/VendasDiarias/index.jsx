@@ -39,7 +39,7 @@ function VendasDiarias({ setVendasDiarias, vendasSemanais, setVendasSemanais, ve
         resumoSemana.lucroBrutoTotal = lucroBrutoTotal.toFixed(2)
         resumoSemana.lucroLiquidoTotal = lucroLiquidoTotal.toFixed(2)
 
-        await fetch("http://localhost:3000/vendas/semanais", {
+        await fetch("https://bar-do-jairo.onrender.com/vendas/semanais", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(resumoSemana)
