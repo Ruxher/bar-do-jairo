@@ -55,6 +55,8 @@ function Caixa({ vendasDiarias, setVendasDiarias, setCaixa, caixa, porTipo, tipo
             <Itens setCaixa={setCaixa} caixa={caixa} tipo="Lata" />
             <h1>Garrafas</h1>
             <Itens setCaixa={setCaixa} caixa={caixa} tipo="Garrafa" />
+            <h1>Salgados</h1>
+            <Itens setCaixa={setCaixa} caixa={caixa} tipo="Salgado" />
         </main>
     )
 }
